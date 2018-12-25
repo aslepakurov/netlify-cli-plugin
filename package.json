@@ -1,0 +1,50 @@
+{
+  "name": "@vgs/netlify-cli-plugin",
+  "version": "0.0.0",
+  "author": "Dima Marynych @dmarynych",
+  "bugs": "https://github.com/verygoodsecurity/netlify-cli-plugin/issues",
+  "dependencies": {
+    "@oclif/command": "^1.5.8",
+    "@oclif/config": "^1.10.3",
+    "opn": "^5.4.0"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1.21.0",
+    "@oclif/plugin-help": "^2.1.4",
+    "@oclif/test": "^1.2.2",
+    "chai": "^4.2.0",
+    "eslint": "^5.10.0",
+    "eslint-config-oclif": "^3.1.0",
+    "globby": "^8.0.1",
+    "mocha": "^5.2.0",
+    "nyc": "^13.1.0"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/npm-shrinkwrap.json",
+    "/oclif.manifest.json",
+    "/src"
+  ],
+  "homepage": "https://github.com/verygoodsecurity/netlify-cli-plugin",
+  "keywords": [
+    "oclif-plugin"
+  ],
+  "license": "MIT",
+  "oclif": {
+    "commands": "./src/commands",
+    "bin": "oclif-auth",
+    "devPlugins": [
+      "@oclif/plugin-help"
+    ]
+  },
+  "repository": "verygoodsecurity/netlify-cli-plugin",
+  "scripts": {
+    "postpack": "rm -f oclif.manifest.json",
+    "posttest": "eslint .",
+    "prepack": "oclif-dev manifest && oclif-dev readme",
+    "test": "nyc mocha --forbid-only \"test/**/*.test.js\"",
+    "version": "oclif-dev readme && git add README.md"
+  }
+}
