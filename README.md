@@ -15,28 +15,28 @@ oclif-plugin-oauth
 # Usage
 <!-- usage -->
 ```sh-session
-$ npm install -g oclif-plugin-oauth
-$ oclif-example COMMAND
+$ npm install -g @vgs/netlify-cli-plugin
+$ vgs-auth COMMAND
 running command...
-$ oclif-example (-v|--version|version)
-oclif-plugin-oauth/0.0.0 darwin-x64 node-v9.11.2
-$ oclif-example --help [COMMAND]
+$ vgs-auth (-v|--version|version)
+@vgs/netlify-cli-plugin/0.0.0 darwin-x64 node-v9.11.2
+$ vgs-auth --help [COMMAND]
 USAGE
-  $ oclif-example COMMAND
+  $ vgs-auth COMMAND
 ...
 ```
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`oclif-example hello`](#oclif-example-hello)
+* [`vgs-auth auth`](#vgs-auth-auth)
 
-## `oclif-example hello`
+## `vgs-auth auth`
 
 Describe the command here
 
 ```
 USAGE
-  $ oclif-example hello
+  $ vgs-auth auth
 
 OPTIONS
   -n, --name=name  name to print
@@ -46,5 +46,5 @@ DESCRIPTION
   Extra documentation goes here
 ```
 
-_See code: [src/commands/hello.js](https://github.com/dmarynych/oclif-plugin-oauth/blob/v0.0.0/src/commands/hello.js)_
+_See code: [src/commands/auth.js](https://github.com/verygoodsecurity/netlify-cli-plugin/blob/v0.0.0/src/commands/auth.js)_
 <!-- commandsstop -->
