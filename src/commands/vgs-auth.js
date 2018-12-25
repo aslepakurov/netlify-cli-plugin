@@ -1,10 +1,14 @@
 const {Command, flags} = require('@oclif/command')
+const fs = require('fs')
+const opn = require('opn')
 
 class AuthCommand extends Command {
   async run() {
-    // const {flags} = this.parse(AuthCommand)
-    // const name = flags.name || 'world'
-    this.log('vgs auth')
+    const netlifyConfigBuffer = fs.readFileSync('.netlify/state.json')
+    const netlifyConfig = JSON.parse(netlifyConfigBuffer.toString('utf8'))
+
+    const url = `https://netlify-addon-genpop.verygoodsecurity.io?siteId=${netlifyConfig.siteId}`
+    opn(url, {wait: false})
   }
 }
 

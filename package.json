@@ -1,6 +1,6 @@
 {
   "name": "@vgs/netlify-cli-plugin",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Dima Marynych @dmarynych",
   "bugs": "https://github.com/verygoodsecurity/netlify-cli-plugin/issues",
   "dependencies": {

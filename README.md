@@ -19,7 +19,7 @@ $ npm install -g @vgs/netlify-cli-plugin
 $ vgs-auth COMMAND
 running command...
 $ vgs-auth (-v|--version|version)
-@vgs/netlify-cli-plugin/0.0.0 darwin-x64 node-v9.11.2
+@vgs/netlify-cli-plugin/0.0.1 darwin-x64 node-v9.11.2
 $ vgs-auth --help [COMMAND]
 USAGE
   $ vgs-auth COMMAND
@@ -28,15 +28,15 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`vgs-auth auth`](#vgs-auth-auth)
+* [`vgs-auth vgs-auth`](#vgs-auth-vgs-auth)
 
-## `vgs-auth auth`
+## `vgs-auth vgs-auth`
 
 Describe the command here
 
 ```
 USAGE
-  $ vgs-auth auth
+  $ vgs-auth vgs-auth
 
 OPTIONS
   -n, --name=name  name to print
@@ -46,5 +46,5 @@ DESCRIPTION
   Extra documentation goes here
 ```
 
-_See code: [src/commands/auth.js](https://github.com/verygoodsecurity/netlify-cli-plugin/blob/v0.0.0/src/commands/auth.js)_
+_See code: [src/commands/vgs-auth.js](https://github.com/verygoodsecurity/netlify-cli-plugin/blob/v0.0.1/src/commands/vgs-auth.js)_
 <!-- commandsstop -->
