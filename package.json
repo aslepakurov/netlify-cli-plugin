@@ -34,7 +34,7 @@
   "license": "MIT",
   "oclif": {
     "commands": "./src/commands",
-    "bin": "oclif-auth",
+    "bin": "vgs-auth",
     "devPlugins": [
       "@oclif/plugin-help"
     ]
