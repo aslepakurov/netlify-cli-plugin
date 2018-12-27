@@ -7,7 +7,8 @@ class AuthCommand extends Command {
     const netlifyConfigBuffer = fs.readFileSync('.netlify/state.json')
     const netlifyConfig = JSON.parse(netlifyConfigBuffer.toString('utf8'))
 
-    const url = `https://netlify-addon-genpop.verygoodsecurity.io/auth?siteId=${netlifyConfig.siteId}`
+    // const url = `https://netlify-addon-genpop.verygoodsecurity.io/auth?siteId=${netlifyConfig.siteId}`
+    const url = `http://localhost:5000/auth?siteId=${netlifyConfig.siteId}`
     opn(url, {wait: false})
   }
 }
