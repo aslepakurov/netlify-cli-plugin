@@ -19,7 +19,7 @@ $ npm install -g @vgs/netlify-cli-plugin
 $ vgs-auth COMMAND
 running command...
 $ vgs-auth (-v|--version|version)
-@vgs/netlify-cli-plugin/0.0.3 darwin-x64 node-v9.11.2
+@vgs/netlify-cli-plugin/0.0.4 darwin-x64 node-v9.11.2
 $ vgs-auth --help [COMMAND]
 USAGE
   $ vgs-auth COMMAND
@@ -46,5 +46,5 @@ DESCRIPTION
   Extra documentation goes here
 ```
 
-_See code: [src/commands/vgs-auth.js](https://github.com/verygoodsecurity/netlify-cli-plugin/blob/v0.0.3/src/commands/vgs-auth.js)_
+_See code: [src/commands/vgs-auth.js](https://github.com/verygoodsecurity/netlify-cli-plugin/blob/v0.0.4/src/commands/vgs-auth.js)_
 <!-- commandsstop -->
